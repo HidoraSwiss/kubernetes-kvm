@@ -1,0 +1,14 @@
+write-kubeconfig-mode: "0644"
+selinux: true
+token: defaultSecret12345 # ${globals.RKE2_TOKEN}
+data-dir: /var/lib/rancher/rke2 # ${globals.RKE2_DATA_PATH}
+server: https://xxxx:9345 # https://${env.domain}:9345
+tls-san:
+  - xxxx # ${env.domain}
+node-taint:
+  - "CriticalAddonsOnly=true:NoExecute"  
+cni:
+  - cilium
+disable:
+  - rke2-canal
+  - rke2-kube-proxy
