@@ -5,8 +5,11 @@ data-dir: RKE2_DATA_PATH
 # server: https://ENV-DOMAIN:9345
 tls-san:
   - ENV-DOMAIN
+cluster-domain: "ENV-DOMAIN"  
 node-taint:
   - "CriticalAddonsOnly=true:NoExecute"  
+node-label:
+  - "nodetype=master"  
 cni:
   - cilium
 disable:
