@@ -32,3 +32,22 @@ spec:
         env:
         - name: MESSAGE
           value: Hello Kubernetes!
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-kubernetes
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: hello-kubernetes
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
