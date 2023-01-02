@@ -1,0 +1,9 @@
+server: https://ENV-DOMAIN:9345
+token: RKE2_TOKEN
+write-kubeconfig-mode: "0644"
+tls-san:
+  - ENV-DOMAIN
+node-taint:
+  - "CriticalAddonsOnly=true:NoExecute"   
+node-label:
+  - "nodetype=master"
