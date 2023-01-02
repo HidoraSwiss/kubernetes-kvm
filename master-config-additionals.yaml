@@ -1,9 +1,11 @@
+write-kubeconfig-mode: "0644"
+selinux: true
 server: https://ENV-DOMAIN:9345
 token: RKE2_TOKEN
 data-dir: RKE2_DATA_PATH
-write-kubeconfig-mode: "0644"
 tls-san:
   - ENV-DOMAIN
+cluster-domain: "ENV-DOMAIN"    
 node-taint:
   - "CriticalAddonsOnly=true:NoExecute"   
 node-label:
