@@ -15,5 +15,5 @@ spec:
             name: hubble-ui
             port:
               number: 80
-        path: /longhorn(/|$)(.*)
+        path: /hubble(/|$)(.*)
         pathType: Prefix
