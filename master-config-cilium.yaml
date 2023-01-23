@@ -15,3 +15,7 @@ cni:
 disable:
   - rke2-canal
   - rke2-kube-proxy
+ingress:
+  provider: nginx
+  options:
+    use-forwarded-headers: "true"
