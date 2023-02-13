@@ -1,0 +1,12 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: rke2-ingress-nginx
+  namespace: kube-system
+spec:
+  chart: https://github.com/kubernetes/ingress-nginx/releases/download/helm-chart-4.4.2/ingress-nginx-4.4.2.tgz
+  valuesContent: |-
+    controller:
+      config:
+        use-forwarded-headers: "true"
+      allowSnippetAnnotations: "true"
