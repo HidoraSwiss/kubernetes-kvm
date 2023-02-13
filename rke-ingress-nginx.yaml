@@ -8,5 +8,8 @@ spec:
   valuesContent: |-
     controller:
       config:
+        allowSnippetAnnotations: "false"
         use-forwarded-headers: "true"
-      allowSnippetAnnotations: "true"
+        compute-full-forwarded-for: "true"
+
+       
