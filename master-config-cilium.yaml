@@ -15,10 +15,10 @@ cni:
 disable:
   - rke2-canal
   - rke2-kube-proxy
-#  - rke2-ingress-nginx
-ingress:
-  provider: nginx
-  options:
-    use-forwarded-headers: "true"
-    allow-snippet-annotations: "false"
-    compute-full-forwarded-for: "true"
+  - rke2-ingress-nginx
+#ingress:
+#  provider: nginx
+#  options:
+#    use-forwarded-headers: "true"
+#    allow-snippet-annotations: "false"
+#    compute-full-forwarded-for: "true"
