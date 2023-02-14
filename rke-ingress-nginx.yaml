@@ -4,7 +4,7 @@ metadata:
   name: rke2-ingress-nginx
   namespace: kube-system
 spec:
-  chart: https://github.com/kubernetes/ingress-nginx/releases/download/helm-chart-4.4.2/ingress-nginx-4.4.2.tgz
+  chart: https://rke2-charts.rancher.io/assets/rke2-ingress-nginx/rke2-ingress-nginx-4.1.004.tgz
   valuesContent: |-
     controller:
       config:
