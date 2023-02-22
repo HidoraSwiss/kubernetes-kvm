@@ -12,9 +12,9 @@ node-label:
   - "nodetype=master"  
 cni:
   - canal
-ingress:
-  provider: nginx
-  options:
-    use-forwarded-headers: "true"
-    allow-snippet-annotations: "false"
-    compute-full-forwarded-for: "true"
+#ingress:
+#  provider: nginx
+#  options:
+#    use-forwarded-headers: "true"
+#    allow-snippet-annotations: "false"
+#    compute-full-forwarded-for: "true"
