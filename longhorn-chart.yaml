@@ -1,12 +1,19 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: longhorn-system
+---
 apiVersion: helm.cattle.io/v1
 kind: HelmChart
 metadata:
   name: longhorn
-  namespace: longhorn-system
+  namespace: kube-system
 spec:
-  chart: https://github.com/longhorn/charts/releases/download/longhorn-1.3.2/longhorn-1.3.2.tgz
+  chart: longhorn
+  repo: https://charts.longhorn.io
   targetNamespace: longhorn-system
-  valuesContent: |-  
+  version: v1.4.2
+  valuesContent: |-
     defaultSettings:
       defaultReplicaCount: 1
       replicaSoftAntiAffinity: true
