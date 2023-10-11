@@ -4,7 +4,7 @@ metadata:
   name: rke2-ingress-nginx
   namespace: kube-system
 spec:
-  chart: https://rke2-charts.rancher.io/assets/rke2-ingress-nginx/rke2-ingress-nginx-4.6.101.tgz
+  chart: https://rke2-charts.rancher.io/assets/rke2-ingress-nginx/rke2-ingress-nginx-CHART_INGRESS_CONTROLLER_VERSION.tgz # ex: 4.6.101
   valuesContent: |-
     controller:
       config:
