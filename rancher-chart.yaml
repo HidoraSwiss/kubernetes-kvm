@@ -10,7 +10,7 @@ metadata:
   namespace: kube-system
 spec:
   chart: rancher
-  version: 2.7.6  # specify the chart version here
+  version: CHART_RANCHER_VERSION #ex 2.7.6  # specify the chart version here
   targetNamespace: cattle-system
   repo: https://releases.rancher.com/server-charts/stable
   valuesContent: |-
