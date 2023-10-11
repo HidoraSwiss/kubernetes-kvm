@@ -12,7 +12,7 @@ spec:
   chart: longhorn
   repo: https://charts.longhorn.io
   targetNamespace: longhorn-system
-  version: v1.5.1
+  version: CHART_LONGHORN_VERSION #ex v1.5.1
   valuesContent: |-
     defaultSettings:
       defaultReplicaCount: 1
