@@ -16,6 +16,8 @@ disable:
   - rke2-canal
   - rke2-kube-proxy
   - rke2-ingress-nginx
+kube-controller-manager-arg:
+  - "pod-eviction-timeout=3m"   
 #ingress:
 #  provider: nginx
 #  options:
