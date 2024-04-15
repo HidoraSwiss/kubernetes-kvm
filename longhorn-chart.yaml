@@ -17,6 +17,7 @@ spec:
     defaultSettings:
       defaultReplicaCount: 1
       replicaSoftAntiAffinity: true
+      orphanAutoDeletion: true
       concurrentAutomaticEngineUpgradePerNodeLimit: 3
       defaultDataLocality: best-effort
       replicaAutoBalance: best-effort      
